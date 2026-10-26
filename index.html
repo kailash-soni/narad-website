@@ -1,253 +1,357 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="NARAD Digital Design Studio — Website Development, Icon Design and Banner Design.">
+    <meta
+      name="description"
+      content="NARAD Digital Design Studio — Website Development, Icon Design and Banner Design."
+    />
 
     <title>NARAD | Digital Design Studio</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- Header -->
     <header class="header">
-        <div class="container nav-container">
+      <div class="container nav-container">
+        <a href="#home" class="logo">
+          <img
+            src="assets/narad-logo.png"
+            alt="NARAD Logo"
+            style="height: 60px; width: auto"
+          />
+        </a>
 
-            <a href="#home" class="logo">
-                <img src="assets/narad-logo.png" alt="NARAD Logo" style="height: 60px;width:auto;">
-            </a>
-
-            <nav class="navigation">
-                <a href="#home">Home</a>
-                <a href="#services">Services</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#about">About</a>
-                <a href="#contact" class="nav-contact">Contact Us</a>
-            </nav>
-
-        </div>
+        <nav class="navigation">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="nav-contact">Contact Us</a>
+        </nav>
+      </div>
     </header>
 
     <!-- Hero Section -->
     <main>
+      <section id="home" class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="eyebrow">WELCOME TO NARAD</p>
 
-        <section id="home" class="hero">
-            <div class="container hero-content">
+            <h1>
+              Ideas into
+              <span>Digital Reality.</span>
+            </h1>
 
-                <div class="hero-text">
-                    <p class="eyebrow">WELCOME TO NARAD</p>
+            <p class="hero-description">
+              We create beautiful websites, memorable icons, and eye-catching
+              banners to bring your ideas to life.
+            </p>
 
-                    <h1>
-                        Ideas into
-                        <span>Digital Reality.</span>
-                    </h1>
+            <div class="hero-buttons">
+              <a href="#services" class="btn btn-primary"> Explore Services </a>
 
-                    <p class="hero-description">
-                        We create beautiful websites, memorable icons,
-                        and eye-catching banners to bring your ideas to life.
-                    </p>
-
-                    <div class="hero-buttons">
-                        <a href="#services" class="btn btn-primary">
-                            Explore Services
-                        </a>
-
-                        <a href="#portfolio" class="btn btn-secondary">
-                            View Our Work
-                        </a>
-                    </div>
-                </div>
-
-                <div class="hero-visual">
-                    <div class="visual-card card-one">
-                        <span class="visual-icon">✳</span>
-                        <h3>Creative Design</h3>
-                        <p>Ideas that stand out.</p>
-                    </div>
-
-                    <div class="visual-card card-two">
-                        <span class="visual-icon">⌘</span>
-                        <h3>Web Development</h3>
-                        <p>Built for your vision.</p>
-                    </div>
-
-                    <div class="visual-orbit orbit-one"></div>
-                    <div class="visual-orbit orbit-two"></div>
-                </div>
-
+              <a href="#portfolio" class="btn btn-secondary"> View Our Work </a>
             </div>
-        </section>
+          </div>
 
-        <!-- Services Section -->
-        <section id="services" class="services section-padding">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="eyebrow">WHAT WE DO</p>
-                    <h2>Our Creative Services</h2>
-                    <p>
-                        Thoughtful design and practical digital solutions
-                        for your next idea.
-                    </p>
-                </div>
-
-                <div class="services-grid">
-
-                    <article class="service-card">
-                        <div class="service-icon">🌐</div>
-                        <h3>Website Design</h3>
-                        <p>
-                            Responsive, attractive websites designed
-                            for businesses and individuals.
-                        </p>
-                        <a href="#contact">Discuss a Website →</a>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-icon">🎨</div>
-                        <h3>Icon Design</h3>
-                        <p>
-                            Distinctive icons for apps, brands,
-                            projects, and digital products.
-                        </p>
-                        <a href="#contact">Discuss Icon Design →</a>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-icon">🖼️</div>
-                        <h3>Banner Design</h3>
-                        <p>
-                            Engaging banners for websites, promotions,
-                            social media, and other digital uses.
-                        </p>
-                        <a href="#contact">Discuss Banner Design →</a>
-                    </article>
-
-                </div>
+          <div class="hero-visual">
+            <div class="visual-card card-one">
+              <span class="visual-icon">✳</span>
+              <h3>Creative Design</h3>
+              <p>Ideas that stand out.</p>
             </div>
-        </section>
 
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="portfolio section-padding">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="eyebrow">OUR WORK</p>
-                    <h2>Creative Work in Progress</h2>
-                    <p>
-                        A growing collection of digital projects
-                        and creative experiments.
-                    </p>
-                </div>
-
-                <div class="portfolio-grid">
-
-                    <article class="portfolio-card portfolio-web">
-                        <div class="portfolio-art">WEB</div>
-                        <div class="portfolio-info">
-                            <span>01 / DEVELOPMENT</span>
-                            <h3>Website Projects</h3>
-                            <p>Digital experiences for the web.</p>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-card portfolio-icon">
-                        <div class="portfolio-art">
-                            <img src="assets/icon1.png"
-                            alt="NARAD Icon Design">
-                        </div>
-                        <div class="portfolio-info">
-                            <span>02 / GRAPHIC DESIGN</span>
-                            <h3>Icon Collection</h3>
-                            <p>Small designs with a clear identity.</p>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-card portfolio-banner">
-                        <div class="portfolio-art">
-                            <img src="assets/Launch-banner1.png"
-                            alt="NARAD Launch Banner Design">
-                        </div>
-                        <div class="portfolio-info">
-                            <span>03 / VISUAL DESIGN</span>
-                            <h3>Banner Collection</h3>
-                            <p>Visuals designed to communicate.</p>
-                        </div>
-                    </article>
-
-                </div>
+            <div class="visual-card card-two">
+              <span class="visual-icon">⌘</span>
+              <h3>Web Development</h3>
+              <p>Built for your vision.</p>
             </div>
-        </section>
 
-        <!-- About Section -->
-        <section id="about" class="about section-padding">
-            <div class="container about-content">
+            <div class="visual-orbit orbit-one"></div>
+            <div class="visual-orbit orbit-two"></div>
+          </div>
+        </div>
+      </section>
 
-                <div class="about-mark">N.</div>
+      <!-- Services Section -->
+      <section id="services" class="services section-padding">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">WHAT WE DO</p>
+            <h2>Our Creative Services</h2>
+            <p>
+              Thoughtful design and practical digital solutions for your next
+              idea.
+            </p>
+          </div>
 
-                <div>
-                    <p class="eyebrow">ABOUT NARAD</p>
-                    <h2>A small studio with big ideas.</h2>
-                    <p>
-                        NARAD is an emerging Digital Design Studio
-                        focused on website development, icon design,
-                        and banner design.
-                    </p>
-                    <p>
-                        Our approach is simple: create useful,
-                        thoughtful, and visually engaging digital work.
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact section-padding">
-            <div class="container contact-content">
-
-                <p class="eyebrow">LET'S CONNECT</p>
-                <h2>Have an idea in mind?</h2>
+          <div class="services-grid">
+            <details class="service-card">
+              <summary>
+                <span class="service-icon">🌐</span>
+                <span class="service-title">Website Design</span>
+              </summary>
+              <div class="service-details">
                 <p>
-                    Let's explore how design and technology
-                    can help bring it to life.
+                  Responsive, attractive websites designed for businesses and
+                  individuals.
                 </p>
+                <a href="#contact">Discuss a Website →</a>
+              </div>
+            </details>
 
-                <a href="mailto:hello@narad.example"
-                   class="btn btn-light">
-                    Get in Touch
-                </a>
-
-                <p class="contact-note">
-                    Contact details will be configured before launch.
+            <details class="service-card">
+              <summary>
+                <span class="service-icon">🎨</span>
+                <span class="service-title">Icon Design</span>
+              </summary>
+              <div class="service-details">
+                <p>
+                  Distinctive icons for apps, brands, projects, and digital
+                  products.
                 </p>
+                <a href="#contact">Discuss Icon Design →</a>
+              </div>
+            </details>
 
+            <details class="service-card">
+              <summary>
+                <span class="service-icon">🖼️</span>
+                <span class="service-title">Banner Design</span>
+              </summary>
+              <div class="service-details">
+                <p>
+                  Engaging banners for websites, promotions, social media, and
+                  other digital uses.
+                </p>
+                <a href="#contact">Discuss Banner Design →</a>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section-padding">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">OUR WORK</p>
+            <h2>Creative Work in Progress</h2>
+            <p>
+              A growing collection of digital projects and creative experiments.
+            </p>
+          </div>
+
+          <div class="portfolio-grid">
+            <article class="portfolio-card portfolio-web">
+              <div class="portfolio-art">WEB</div>
+              <div class="portfolio-info">
+                <span>01 / DEVELOPMENT</span>
+                <h3>Website Projects</h3>
+                <p>Digital experiences for the web.</p>
+              </div>
+            </article>
+
+            <article class="portfolio-card portfolio-icon">
+              <div class="portfolio-art">
+                <img src="assets/icon1.png" alt="NARAD Icon Design" />
+              </div>
+              <div class="portfolio-info">
+                <span>02 / GRAPHIC DESIGN</span>
+                <h3>Icon Collection</h3>
+                <p>Small designs with a clear identity.</p>
+              </div>
+            </article>
+
+            <article class="portfolio-card portfolio-banner">
+              <div class="portfolio-art">
+                <img
+                  src="assets/Launch-banner1.png"
+                  alt="NARAD Launch Banner Design"
+                />
+              </div>
+              <div class="portfolio-info">
+                <span>03 / VISUAL DESIGN</span>
+                <h3>Banner Collection</h3>
+                <p>Visuals designed to communicate.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about section-padding">
+        <div class="container about-content">
+          <div class="about-mark">N.</div>
+
+          <div>
+            <p class="eyebrow">ABOUT NARAD</p>
+            <h2>A small studio with big ideas.</h2>
+            <div class="about-tabs">
+              <div
+                class="about-tab-list"
+                role="tablist"
+                aria-label="About Narad"
+              >
+                <button
+                  class="about-tab"
+                  id="about-tab-overview"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls="about-panel-overview"
+                  tabindex="0"
+                >
+                  Overview
+                </button>
+                <button
+                  class="about-tab"
+                  id="about-tab-mission"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="about-panel-mission"
+                  tabindex="-1"
+                >
+                  Our Mission
+                </button>
+                <button
+                  class="about-tab"
+                  id="about-tab-how-it-works"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="about-panel-how-it-works"
+                  tabindex="-1"
+                >
+                  How It Works
+                </button>
+              </div>
+              <section
+                class="about-tab-panel"
+                id="about-panel-overview"
+                role="tabpanel"
+                aria-labelledby="about-tab-overview"
+                tabindex="0"
+              >
+                <h3>Overview</h3>
+                <p>Placeholder: Overview description will be added here.</p>
+              </section>
+              <section
+                class="about-tab-panel"
+                id="about-panel-mission"
+                role="tabpanel"
+                aria-labelledby="about-tab-mission"
+                tabindex="0"
+                hidden
+              >
+                <h3>Our Mission</h3>
+                <p>Placeholder: Our Mission description will be added here.</p>
+              </section>
+              <section
+                class="about-tab-panel"
+                id="about-panel-how-it-works"
+                role="tabpanel"
+                aria-labelledby="about-tab-how-it-works"
+                tabindex="0"
+                hidden
+              >
+                <h3>How It Works</h3>
+                <p>Placeholder: How It Works description will be added here.</p>
+              </section>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
+      <!-- Contact Section -->
+      <section id="contact" class="contact section-padding">
+        <div class="container contact-content">
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2>Have an idea in mind?</h2>
+          <p>
+            Let's explore how design and technology can help bring it to life.
+          </p>
+
+          <a href="mailto:enternarad@gmail.com" class="btn btn-light">
+            Get in Touch
+          </a>
+
+          <a
+            href="#"
+            class="btn btn-light"
+            aria-disabled="true"
+            title="Phone number comming soon"
+          >
+            Call Us - Comming Soon
+          </a>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="contactName">Name</label>
+              <input
+                type="text"
+                id="contactName"
+                name="name"
+                maxlength="100"
+                autocomplete="name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail">Email</label>
+              <input
+                type="email"
+                id="contactEmail"
+                name="email"
+                maxlength="254"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea
+                id="contactMessage"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-light">Send Message</button>
+
+            <p id="contactFormStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-content">
-            <a href="#home" class="logo">
-                <img src="assets/narad-logo.png" alt="NARAD Logo"
-                style="height:60px;width:auto">
-            </a>
+      <div class="container footer-content">
+        <a href="#home" class="logo">
+          <img
+            src="assets/narad-logo.png"
+            alt="NARAD Logo"
+            style="height: 60px; width: auto"
+          />
+        </a>
 
-            <p>
-                © <span id="current-year"></span> NARAD Digital Design Studio.
-            </p>
+        <p>© <span id="current-year"></span> NARAD Digital Design Studio.</p>
 
-            <a href="#home">Back to Top ↑</a>
-        </div>
+        <a href="#home">Back to Top ↑</a>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>

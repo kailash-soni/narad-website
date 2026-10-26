@@ -307,6 +307,24 @@ a {
     box-shadow: var(--shadow);
 }
 
+.service-card summary {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.service-card summary::-webkit-details-marker {
+    display: none;
+}
+
+.service-card summary:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 5px;
+    border-radius: 4px;
+}
+
 .service-icon {
     width: 60px;
     height: 60px;
@@ -316,12 +334,30 @@ a {
     background: #efedff;
     border-radius: 16px;
     font-size: 27px;
-    margin-bottom: 23px;
+    flex: 0 0 60px;
 }
 
-.service-card h3 {
+.service-title {
     font-size: 21px;
-    margin-bottom: 12px;
+    font-weight: 700;
+    line-height: 1.3;
+    flex: 1;
+}
+
+.service-card summary::after {
+    content: "+";
+    color: var(--primary);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.service-card[open] summary::after {
+    content: "−";
+}
+
+.service-details {
+    padding-top: 22px;
 }
 
 .service-card p {
@@ -330,7 +366,7 @@ a {
     margin-bottom: 22px;
 }
 
-.service-card>a {
+.service-details>a {
     font-size: 13px;
     font-weight: 700;
     color: var(--primary);
@@ -446,9 +482,86 @@ a {
     margin-bottom: 22px;
 }
 
-.about-content>div:last-child>p:not(.eyebrow) {
+.about-tab-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 22px;
+    border-bottom: 1px solid var(--border);
+}
+
+.about-tab {
+    padding: 10px 0;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    background: transparent;
     color: var(--text);
-    margin-top: 14px;
+    cursor: pointer;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.about-tab[aria-selected="true"] {
+    border-bottom-color: var(--primary);
+    color: var(--primary);
+}
+
+.about-tab:focus-visible,
+.about-tab-panel:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 4px;
+    border-radius: 3px;
+}
+
+.about-tab-panel {
+    padding-top: 18px;
+}
+
+.about-tab-panel h3 {
+    font-size: 19px;
+    line-height: 1.3;
+}
+
+.about-tab-panel p {
+    color: var(--text);
+    margin-top: 8px;
+}
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+    color: var(--white);
+    background:
+        radial-gradient(circle at 15% 15%, #7770ed, transparent 35%),
+        linear-gradient(120deg, #26204d, #17172b);
+}
+
+.contact .eyebrow {
+    color: #c8c2ff;
+}
+
+.contact-content>p:not(.eyebrow) {
+    max-width: 560px;
+    margin: 18px auto 28px;
+    color: #d1d0e4;
+}
+
+.btn-light {
+    background: var(--white);
+    color: var(--primary-dark);
+}
+
+.btn-light:hover {
+    background: #f0efff;
+}
+
+.contact-content .contact-note {
+    font-size: 12px;
+    margin-top: 22px;
+    margin-bottom: 0;
+    color: #c1bfd9;
 }
 
 /* CONTACT */
